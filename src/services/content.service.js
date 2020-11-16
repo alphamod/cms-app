@@ -1,7 +1,7 @@
 import axios from "axios";
 import authHeader from './auth-header';
 
-const API_URL = "http://localhost:4000/";
+const API_URL = "https://cms-server-alpham.herokuapp.com/";
 
 const addPost = (title, content, postedBy) => {
     return axios.post(`${API_URL}addcontent`, { title, content, postedBy }, { headers: authHeader() });
